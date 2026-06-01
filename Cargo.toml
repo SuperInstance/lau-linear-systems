@@ -1,0 +1,16 @@
+[package]
+name = "lau-linear-systems"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/SuperInstance/lau-linear-systems"
+description = "Linear dynamical systems — state-space models, observability, controllability, Kalman filtering, LQR, and system interconnection"
+
+[dependencies]
+nalgebra = { version = "0.33", features = ["serde-serialize"] }
+serde = { version = "1", features = ["derive"] }
+num-complex = "0.4"
+
+[dev-dependencies]
+approx = "0.5"
+serde_json = "1"
